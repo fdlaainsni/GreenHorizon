@@ -1,0 +1,532 @@
+/* Reset beberapa default styling */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Styling untuk header */
+header {
+    background-color: #3a573c; /* Warna hijau yang lebih segar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling untuk gambar logo */
+header img {
+    height: 40px; /* Ukuran logo yang lebih kecil */
+}
+
+/* Styling untuk navigasi */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 1px; /* Jarak antar item navigasi yang lebih kecil */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 14px; /* Ukuran font yang lebih kecil */
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s ease; /* Transisi yang lebih halus */
+}
+
+nav ul li a:hover {
+    background-color: #3a573c; /* Warna hover yang sedikit lebih gelap */
+    border-radius: 5px; /* Tambahkan border radius saat hover */
+}
+
+/* Styling untuk dropdown menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3a573c;
+    min-width: 150px; /* Lebar dropdown yang lebih kecil */
+    z-index: 1;
+    border-radius: 5px; /* Tambahkan border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Tambahkan shadow */
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    color: white;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li ul li a:hover {
+    background-color: #3a573c;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Styling untuk section Beranda */
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Memenuhi tinggi layar */
+    background: #5b855e; /* Warna latar belakang hijau muda */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container untuk section home */
+.Home-container {
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Home h1 {
+    font-size: 2.5em;
+    color: #ffffff; /* Warna hijau tua */
+    margin-bottom: 20px;
+}
+
+.Home p {
+    font-size: 1.1em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk tombol CTA */
+.cta-buttons {
+    position: fixed; /* Tombol tetap di posisi saat di-scroll */
+    bottom: 20px;
+    right: 20px; /* Pindahkan ke sebelah kanan */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antara tombol */
+}
+
+.cta-button {
+    background-color: #3a573c; /* Warna hijau */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 50px; /* Membuat tombol oval */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.cta-button:hover {
+    background-color: #3a573c; /* Warna hijau lebih gelap saat hover */
+    transform: translateY(-5px); /* Efek naik sedikit saat hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih besar saat hover */
+}
+
+/* Styling untuk section Artikel */
+.Artikel {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang */
+    text-align: center;
+}
+
+.Artikel h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Container untuk artikel */
+.artikel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Jarak antara artikel */
+}
+
+/* Styling untuk setiap artikel box */
+.artikel-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.artikel-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.artikel-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Gambar menutupi area dengan proporsi yang benar */
+}
+
+.artikel-box h2 {
+    font-size: 1.5em;
+    color: #3a573c; /* Warna hijau */
+    margin: 15px 10px;
+}
+
+.artikel-box p {
+    font-size: 1em;
+    color: #666;
+    margin: 0 10px 15px;
+    line-height: 1.5;
+}
+
+/* Styling untuk tombol "Baca Artikel" */
+.cta-button {
+    display: inline-block;
+    background-color: #3a573c; /* Warna hijau */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3a573c; /* Warna hijau lebih gelap saat hover */
+}
+
+/* Styling untuk section Panduan */
+.Tips {
+    padding: 80px 20px;
+    background: #5b855e; /* Warna latar belakang soft blue */
+    text-align: center;
+}
+
+.Tips h1 {
+    font-size: 2.5em;
+    color: #ffffff; /* Warna biru tua */
+    margin-bottom: 30px;
+    text-transform: capitalize; /* Huruf pertama kapital */
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.Tips h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #3a573c; /* Garis bawah hijau */
+    border-radius: 2px;
+}
+
+.Tips p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Tips ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Tips ul li {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.Tips ul li::before {
+    content: "✔"; /* Simbol centang */
+    position: absolute;
+    left: 0;
+    color: #3a573c; /* Warna hijau */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Efek hover pada list item */
+.Tips ul li:hover {
+    color: #3a573c; /* Warna hijau saat hover */
+    transform: translateX(10px); /* Geser ke kanan saat hover */
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Styling untuk section Kalkulator Jejak Karbon */
+.kalkulator-jejak-karbon {
+    padding: 50px 20px;
+    background: #91ac91; /* Warna latar belakang hijau muda */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kalkulator-jejak-karbon h1 {
+    font-size: 2.5em;
+    color: #323436; /* Warna hijau tua */
+    margin-bottom: 20px;
+}
+
+.kalkulator-jejak-karbon p {
+    font-size: 1.1em;
+    color: #424040;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk input group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling untuk tombol */
+.cta-button {
+    background: #3a573c; /* Warna hijau */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #3a573c; /* Warna hijau lebih gelap */
+    transform: translateY(-3px); /* Efek naik sedikit saat hover */
+}
+
+/* Styling untuk hasil kalkulasi */
+.hasil-kalkulasi {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Sembunyikan hasil awal */
+}
+
+.hasil-kalkulasi h2 {
+    font-size: 1.8em;
+    color: #3a573c; /* Warna hijau tua */
+    margin-bottom: 15px;
+}
+
+.hasil-kalkulasi p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hasil-kalkulasi ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.hasil-kalkulasi ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.hasil-kalkulasi ul li::before {
+    content: "✔"; /* Simbol centang */
+    position: absolute;
+    left: 0;
+    color: #3a573c; /* Warna hijau */
+    font-size: 1.2em;
+}
+
+/* Styling untuk section Tentang Kami */
+.tentang-kami {
+    padding: 50px 20px;
+    background: #5b855e; /* Warna latar belakang soft blue */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tentang-kami h2 {
+    font-size: 2em;
+    color: #e5ede5; /* Warna hijau */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tentang-kami p {
+    font-size: 1.1em;
+    color: #faf6f6;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tentang-kami ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tentang-kami ul li {
+    font-size: 1.1em;
+    color: #f0e6e6;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tentang-kami ul li::before {
+    content: "✔"; /* Simbol centang */
+    position: absolute;
+    left: 0;
+    color: #3a573c; /* Warna hijau */
+    font-size: 1.2em;
+}
+
+/* Styling untuk section Kontak */
+.kontak {
+    padding: 50px 20px;
+    background: #f0f4f8; /* Warna latar belakang soft blue */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontak h1 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Warna biru tua */
+    margin-bottom: 20px;
+}
+
+.kontak hr {
+    border: 1px solid #3a573c; /* Garis horizontal dengan warna lightgreen */
+    width: 50%;
+    margin: 20px auto; /* Jarak dari h1 dan konten di bawahnya */
+}
+
+/* Styling untuk tim container */
+.tim-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Styling untuk tim box */
+.tim-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan konten secara horizontal */
+    text-align: center; /* Memusatkan teks */
+}
+
+.tim-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tim-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tim-box h3 {
+    font-size: 1.5em;
+    color: #2c3e50; /* Warna biru tua */
+    margin-bottom: 10px;
+}
+
+.tim-box p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+/* Styling untuk paragraf di bawah tim box */
+.tim-container p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.tim-container a {
+    color: #3a573c; /* Warna hijau */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tim-container a:hover {
+    text-decoration: underline; /* Efek underline saat hover */
+}
+
+/* Mobile Styles (max-width: 600px) */
+@media (max-width: 768px) {
+    
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="pohon.png" alt="pohon">
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Artikel">Artikel</a>
+                <ul>
+                    <li><a href="#DaurUlang">Daur Ulang</a></li>
+                    <li><a href="#BerkebunOrganik">Berkebun Organik</a></li>
+                    <li><a href="#Energiterbarukan">Energi Terbarukan</a></li>
+                    <li><a href="#PerubahanIklim">Perubahan Iklim</a></li>
+                </ul>
+                </li>
+                <li><a href="#Tips">Tips</a></li>
+                <li><a href="#Kalkulator-Jejak-Karbon">Kalbon</a></li>
+                <li><a href="#Tentang-Kami">Tentang Kami</a></li>
+                <li><a href="#Kontak">Kontak Tim</a></li>
+            </ul>
+            </nav>
+    </header>
+</body>
+        <section id="Home" class="Home">
+            <h1>Bersama Menjaga Bumi Kita</h1>
+            <p>Bersama Menjaga Bumi Kita adalah platform edukasi dan informasi yang bertujuan untuk meningkatkan kesadaran masyarakat tentang pentingnya menjaga lingkungan hidup. Kami berkomitmen untuk memberikan solusi praktis dan inspirasi bagi semua orang untuk berkontribusi dalam melestarikan bumi.</p>
+            <br>
+            <div class="cta-buttons">
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bergabung%20dengan%20komunitas!" class="cta-button" target="_blank">Bergabung dengan Komunitas</a>
+            </div>
+        </section>
+        <section id="Artikel" class="Artikel">
+            <h1>Artikel</h1>
+            <div class="artikel-container">
+                <div class="artikel-box">
+                    <img src="photo1.jpg" alt="daurulang">
+                    <h2>Daur Ulang Sampah</h2>
+                    <p>Artikel ini berisi tentang cara-cara daur ulang sampah dan manfaat daur ulang bagi lingkungan hidup.</p>
+                    <a href="file:///C:/Users/Fadil/Pictures/projek%20vsc/artikel%20daur%20ulang/index.html" class="cta-button">Baca Artikel</a>
+                </div>
+                <div class="artikel-box">
+                    <img src="photo2.jpg" alt="berkebun">
+                    <h2>Berkebun Organik</h2>
+                    <p>Artikel ini berisi tentang cara-cara berkebun organik dan manfaat berkebun organik bagi lingkungan hidup.</p>
+                    <a href="file:///C:/Users/Fadil/Pictures/projek%20vsc/artikel%20daur%20ulang/artikel%20Berkebun%20Organik/index.html" class="cta-button">Baca Artikel</a>
+                </div> 
+                <div class="artikel-box">
+                    <img src="photo3.jpg" alt="energi">
+                    <h2>Energi Terbarukan</h2>
+                    <p>Artikel ini berisi tentang jenis-jenis energi terbarukan dan manfaat energi terbarukan bagi lingkungan hidup.</p>
+                    <a href="file:///C:/Users/Fadil/Pictures/projek%20vsc/artikel%20daur%20ulang/artikel%20Energi%20Terbarukan/index.html" class="cta-button">Baca Artikel</a>
+                </div>
+                <div class="artikel-box">
+                    <img src="photo4.jpg" alt="perubahan">
+                    <h2>Perubahan Iklim</h2>
+                    <p>Artikel ini berisi tentang penyebab perubahan iklim dan dampak perubahan iklim bagi lingkungan hidup.</p>
+                    <a href="file:///C:/Users/Fadil/Pictures/projek%20vsc/artikel%20daur%20ulang/artikel%20Energi%20Terbarukan/index.html" class="cta-button">Baca Artikel</a>
+                </div>
+            </div>
+        </section>
+        <section id="Tips" class="Tips">
+            <h1>Tips Daur Ulang Sampah</h1>
+            <p>
+                Berikut adalah beberapa tips daur ulang sampah yang dapat membantu masyarakat dalam melestarikan lingkungan hidup:
+            </p>
+
+            <ul>
+                <li>Memilah sampah organik dan anorganik</li>
+                <li>Menggunakan kembali barang-barang yang masih bisa digunakan</li>
+                <li>Membuat kerajinan tangan dari barang-barang bekas</li>
+                <li>Mengolah sampah organik menjadi pupuk kompos</li>
+                <li>Mengurangi penggunaan kantong plastik</li>
+            </ul>
+        </section>
+
+        <section id="Kalkulator-Jejak-Karbon" class="kalkulator-jejak-karbon">
+            <h1>Kalkulator Jejak Karbon</h1>
+            <p>Hitung dampak lingkungan Anda berdasarkan penggunaan listrik, transportasi, dan konsumsi makanan.</p>
+            
+            <form id="karbonForm">
+                <!-- Input Listrik -->
+                <div class="input-group">
+                    <label for="listrik">Penggunaan Listrik Bulanan (kWh):</label>
+                    <input type="number" id="listrik" name="listrik" placeholder="Contoh: 200" required>
+                </div>
+    
+                <!-- Input Transportasi -->
+                <div class="input-group">
+                    <label for="transportasi">Jarak Tempuh Bulanan (km):</label>
+                    <input type="number" id="transportasi" name="transportasi" placeholder="Contoh: 500" required>
+                </div>
+    
+                <!-- Input Konsumsi Makanan -->
+                <div class="input-group">
+                    <label for="makanan">Konsumsi Daging per Minggu (kg):</label>
+                    <input type="number" id="makanan" name="makanan" placeholder="Contoh: 2" required>
+                </div>
+    
+                <!-- Tombol Hitung -->
+                <button type="submit" class="cta-button">Hitung Jejak Karbon</button>
+            </form>
+    
+            <!-- Hasil Perhitungan -->
+            <div id="hasil" class="hasil-kalkulasi">
+                <h2>Hasil Jejak Karbon Anda:</h2>
+                <p id="totalKarbon">-</p>
+                <p id="rekomendasi">Mulai kurangi jejak karbon Anda dengan tips berikut:</p>
+                <ul id="tips">
+                    <li>Gunakan transportasi umum atau sepeda.</li>
+                    <li>Kurangi konsumsi daging dan beralih ke makanan berbasis nabati.</li>
+                    <li>Gunakan peralatan hemat energi.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="Tentang-Kami" class="tentang-kami">
+            <h2>Visi Kami</h2>
+            <p>
+                Menjadi sumber informasi terpercaya dan inspirasi bagi masyarakat dalam upaya melestarikan lingkungan hidup untuk masa depan yang lebih baik.
+            </p>
+    
+            <h2>Misi Kami</h2>
+            <ul>
+                <li>Menyediakan informasi yang akurat dan terbaru tentang isu lingkungan.</li>
+                <li>Mengedukasi masyarakat tentang praktik ramah lingkungan.</li>
+                <li>Mendorong partisipasi aktif dalam kegiatan pelestarian lingkungan.</li>
+                <li>Membangun komunitas yang peduli terhadap keberlanjutan bumi.</li>
+            </ul>
+        </section>
+        <section id="Kontak" class="kontak tim">
+            <h1>Kontak Tim</h1>
+            <hr color="lightgreen">
+            <div class="tim-container">
+                <div class="tim-box">
+                    <img src="saya.png" alt="Anggota Tim 1">
+                    <h3>Fadila Insani</h3>
+                    <p>Founder & Penulis Artikel</p>
+                </div>
+                <div>
+                <p>
+                    Jika Anda tertarik untuk berkontribusi, sharing atau bekerja sama dengan saya, silakan hubungi saya melalui email di <a href="mailto:fadilainsani0@gmail.com">fadilainsani0@gmail.com</a>
+                </p>
+            </div>
+        </section>
+        <script src="script.js"></script>
+</html>
