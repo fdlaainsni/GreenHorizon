@@ -573,5 +573,37 @@ nav ul li ul li a {
 nav ul li:hover ul {
     position: relative;
 }
-    
+/* Styling untuk section Beranda */
+.Home {
+    padding: 10px; /* Padding lebih kecil */
+}
+
+.Home-container {
+    padding: 15px; /* Padding lebih kecil */
+    border-radius: 10px; /* Border radius lebih kecil */
+}
+
+.Home h1 {
+    font-size: 2em; /* Ukuran font lebih kecil */
+}
+
+.Home p {
+    font-size: 1em; /* Ukuran font lebih kecil */
+    line-height: 1.5; /* Line height lebih kecil */
+    margin-bottom: 20px; /* Margin bottom lebih kecil */
+}
+
+/* Styling untuk tombol CTA */
+.cta-buttons {
+    bottom: 10px; /* Posisi bottom lebih dekat */
+    right: 10px; /* Posisi right lebih dekat */
+    gap: 5px; /* Gap lebih kecil */
+}
+
+.cta-button {
+    padding: 10px 20px; /* Padding lebih kecil */
+    font-size: 0.9em; /* Ukuran font lebih kecil */
+    border-radius: 30px; /* Border radius lebih kecil */
+}
+  
 }
