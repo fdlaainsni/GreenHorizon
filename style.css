@@ -528,8 +528,6 @@ nav ul li:hover ul {
 
 /* Mobile Styles (max-width: 768px) */
 @media (max-width: 768px) {
-/* Mobile Styles (max-width: 768px) */
-@media (max-width: 768px) {
     nav ul {
         flex-direction: row;
     }
