@@ -38,3 +38,11 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         }
     });
 });
+
+//navbar toggler
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
