@@ -528,51 +528,34 @@ nav ul li:hover ul {
 
 /* Mobile Styles (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Styling untuk header */
-header {
-    flex-direction: column; /* Mengubah arah flex menjadi kolom */
-    align-items: flex-start; /* Mengatur item ke awal (kiri) */
-}
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
 
-/* Styling untuk gambar logo */
-header img {
-    margin-bottom: 10px; /* Menambahkan margin bawah */
-}
+    nav ul li {
+        width: auto;
+        margin-left: 0;
+    }
 
-/* Styling untuk navigasi */
-nav ul {
-    flex-direction: column; /* Mengubah arah flex menjadi kolom */
-    width: 100%; /* Memenuhi lebar header */
-}
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
 
-nav ul li {
-    margin-left: 0; /* Menghapus margin kiri */
-    width: 100%; /* Memenuhi lebar navigasi */
-    text-align: left; /* Mengatur teks ke kiri */
-}
+    /* Styling untuk menu "More" */
+    .more-dropdown {
+        display: none;
+        position: absolute;
+        background-color: #3a573c;
+        min-width: 150px;
+        z-index: 1;
+    }
 
-nav ul li a {
-    padding: 10px 15px; /* Menyesuaikan padding */
-    font-size: 16px; /* Ukuran font yang lebih besar */
-}
-
-/* Styling untuk dropdown menu */
-nav ul li ul {
-    position: relative; /* Mengubah posisi dropdown */
-    top: 0; /* Menghapus top */
-    left: 0; /* Menghapus left */
-    width: 100%; /* Memenuhi lebar navigasi */
-    box-shadow: none; /* Menghapus shadow */
-    border-radius: 0; /* Menghapus border radius */
-}
-
-nav ul li ul li a {
-    padding: 10px 20px; /* Menyesuaikan padding */
-}
-
-nav ul li:hover ul {
-    position: relative;
-}
+    .more:hover .more-dropdown {
+        display: block;
+    }
 /* Styling untuk section Beranda */
 .Home {
     padding: 10px; /* Padding lebih kecil */
