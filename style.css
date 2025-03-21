@@ -526,7 +526,52 @@ nav ul li:hover ul {
     text-decoration: underline; /* Efek underline saat hover */
 }
 
-/* Mobile Styles (max-width: 600px) */
+/* Mobile Styles (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Styling untuk header */
+header {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom */
+    align-items: flex-start; /* Mengatur item ke awal (kiri) */
+}
+
+/* Styling untuk gambar logo */
+header img {
+    margin-bottom: 10px; /* Menambahkan margin bawah */
+}
+
+/* Styling untuk navigasi */
+nav ul {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom */
+    width: 100%; /* Memenuhi lebar header */
+}
+
+nav ul li {
+    margin-left: 0; /* Menghapus margin kiri */
+    width: 100%; /* Memenuhi lebar navigasi */
+    text-align: left; /* Mengatur teks ke kiri */
+}
+
+nav ul li a {
+    padding: 10px 15px; /* Menyesuaikan padding */
+    font-size: 16px; /* Ukuran font yang lebih besar */
+}
+
+/* Styling untuk dropdown menu */
+nav ul li ul {
+    position: relative; /* Mengubah posisi dropdown */
+    top: 0; /* Menghapus top */
+    left: 0; /* Menghapus left */
+    width: 100%; /* Memenuhi lebar navigasi */
+    box-shadow: none; /* Menghapus shadow */
+    border-radius: 0; /* Menghapus border radius */
+}
+
+nav ul li ul li a {
+    padding: 10px 20px; /* Menyesuaikan padding */
+}
+
+nav ul li:hover ul {
+    position: relative;
+}
     
 }
