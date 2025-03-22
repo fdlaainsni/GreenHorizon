@@ -606,8 +606,6 @@ nav ul li:hover ul {
     font-size: 0.9em; /* Ukuran font lebih kecil */
     border-radius: 30px; /* Border radius lebih kecil */
 }
-  
-}
 
 /* Styling Tips */
 .Tips p {
@@ -615,4 +613,5 @@ nav ul li:hover ul {
     margin-bottom: 20px;
     max-width: 90%;
     text-align: center;
+}
 }
