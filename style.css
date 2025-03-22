@@ -628,7 +628,7 @@ nav ul li:hover ul {
         margin-bottom: 20px; /* Sesuaikan margin bawah */
         line-height: 1.5; /* Kurangi spasi antar baris */
         max-width: 100%; /* Pastikan tidak melebihi lebar layar */
-        padding: 0 15px; /* Tambahkan padding agar tidak terlalu mepet */
+        padding: 0; /* Tambahkan padding agar tidak terlalu mepet */
         text-align: center; /* Rata kiri-kanan agar rapi */
     }
 }
