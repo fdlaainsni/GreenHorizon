@@ -208,7 +208,7 @@ nav ul li:hover ul {
 
 /* Styling untuk section Panduan */
 .Tips {
-    padding: 80px 20px;
+    padding: 60px 15px;
     background: #5b855e; /* Warna latar belakang soft blue */
     text-align: center;
 }
@@ -608,10 +608,27 @@ nav ul li:hover ul {
 }
 
 /* Styling Tips */
-.Tips p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    max-width: 90%;
-    text-align: center;
-}
+.Tips {
+        padding: 40px 10px; /* Sesuaikan padding agar lebih kompak */
+    }
+
+    .Tips h1 {
+        font-size: 2em; /* Kurangi ukuran font agar tidak terlalu besar */
+        letter-spacing: 1.5px; /* Kurangi jarak antar huruf */
+        margin-bottom: 20px; /* Sesuaikan jarak */
+    }
+
+    .Tips h1::after {
+        width: 50px; /* Kurangi lebar garis bawah */
+        height: 3px; /* Kurangi ketebalan garis bawah */
+    }
+
+    .Tips p {
+        font-size: 1em; /* Kurangi ukuran font agar lebih pas */
+        margin-bottom: 20px; /* Sesuaikan margin bawah */
+        line-height: 1.5; /* Kurangi spasi antar baris */
+        max-width: 100%; /* Pastikan tidak melebihi lebar layar */
+        padding: 0 15px; /* Tambahkan padding agar tidak terlalu mepet */
+        text-align: justify; /* Rata kiri-kanan agar rapi */
+    }
 }
