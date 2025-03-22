@@ -608,3 +608,11 @@ nav ul li:hover ul {
 }
   
 }
+
+/* Styling Tips */
+.Tips p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    max-width: 90%;
+    text-align: center;
+}
