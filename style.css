@@ -632,3 +632,73 @@ nav ul li:hover ul {
         text-align: justify; /* Rata kiri-kanan agar rapi */
     }
 }
+
+    .tentang-kami {
+        padding: 30px 15px; /* Mengurangi padding */
+    }
+
+    .tentang-kami h2 {
+        font-size: 1.8em; /* Mengurangi ukuran font */
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .tentang-kami p {
+        font-size: 1em; /* Mengurangi ukuran font */
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .tentang-kami ul li {
+        font-size: 1em; /* Mengurangi ukuran font */
+        padding-left: 15px;
+    }
+
+    .tentang-kami ul li::before {
+        font-size: 1em; /* Mengurangi ukuran simbol centang */
+    }
+}
+
+    .kontak {
+        padding: 30px 15px; /* Mengurangi padding */
+    }
+
+    .kontak h1 {
+        font-size: 2em; /* Mengurangi ukuran font */
+        margin-bottom: 15px;
+    }
+
+    .kontak hr {
+        width: 70%; /* Lebar garis horizontal lebih kecil */
+        margin: 15px auto;
+    }
+}
+    .tim-container {
+        flex-direction: column; /* Menata elemen secara vertikal */
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .tim-box {
+        width: 100%; /* Lebar penuh pada mobile */
+        max-width: 300px; /* Batasi lebar maksimum */
+        margin: 0 auto; /* Pusatkan kotak */
+    }
+
+    .tim-box img {
+        height: 150px; /* Mengurangi tinggi gambar */
+    }
+
+    .tim-box h3 {
+        font-size: 1.3em; /* Mengurangi ukuran font */
+    }
+
+    .tim-box p {
+        font-size: 0.9em; /* Mengurangi ukuran font */
+    }
+
+    .tim-container p {
+        font-size: 1em; /* Mengurangi ukuran font */
+        margin-top: 20px;
+    }
+}
