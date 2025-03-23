@@ -647,6 +647,7 @@ nav ul li:hover ul {
         font-size: 1em; /* Mengurangi ukuran font */
         line-height: 1.5;
         margin-bottom: 15px;
+        text-align: justify;
     }
 
     .tentang-kami ul li {
